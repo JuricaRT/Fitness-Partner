@@ -1,6 +1,6 @@
 # Fitness-Partner
 
-Rasa commands
+Rasa Commands
 -------------
 
 * `rasa train` -  Trains a model using your NLU data and stories, saves trained model in `./models`
@@ -8,7 +8,7 @@ Rasa commands
 * `rasa test` -  Tests a trained Rasa model on any files starting with `test_.`
 * `rasa data split nlu` -  Performs a 80/20 split of your NLU training data.
 * `rasa shell` - Loads your trained model and lets you talk to your assistant on the command line.
-
+* `rasa run actions` - Starts an action server using the Rasa SDK.
 
 Directory Structure
 -------------

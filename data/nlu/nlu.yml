@@ -11,82 +11,89 @@ nlu:
     - good evening
     - moin
     - hey there
-    - let's go
     - hey dude
     - goodmorning
     - goodevening
     - good afternoon
-
-- intent: goodbye
+    - yo
+    - howdy
+    - How are you doing?
+    - sup
+    - what's up
+    - heyya
+    - you there?
+    - greetings
+    
+- intent: get_name
   examples: |
-    - good afternoon
-    - cu
-    - good by
-    - cee you later
-    - good night
-    - bye
-    - goodbye
-    - have a nice day
-    - see you around
-    - bye bye
-    - see you later
+    - My name is [Tony](name)
+    - It is [Patrick](name)
+    - It's [Monica](name)
+    - [Michael](name)
+    - [bella](name)
+    - Friends call me [Greg](name)
+    - I'm [Ana](name)
+    - You can call me [Bob](name)
+    - [Alex](name)
+    - [john](name)
+    - Hi, my name is [George](name)
+    - Call me [Becky](name)
+    - [max](name)
+    - just [Chloe](name)
+    - my name is [Elizabeth](name)
+    - I'd like you to call me [Sam](name)
+    - It's [Ben](name) if you really have to know
+    - [daniel](name)
+    - [Dan](name)
+    - Its [Jack](name)
+    - its [leo](name)
+    - [mike](name)
+    - [jessica](name)
+    - [Catherine](name)
 
 - intent: affirm
   examples: |
     - yes
     - y
-    - indeed
+    - sure
     - of course
+    - hell yeah
+    - yes please
+    - definitely
+    - absolutely
+    - I agree
+    - I accept
+    - ok
     - that sounds good
+    - agreed
+    - yeah
     - correct
+    - let's go
+    - what are we waiting for?
+    - let's start
+    - go
+    - start
 
 - intent: deny
   examples: |
     - no
     - n
+    - nope
+    - nah
+    - no chance
+    - please stop
+    - I decline
     - never
     - I don't think so
     - don't like that
-    - no way
     - not really
-
-- intent: mood_great
-  examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
-
-- intent: mood_unhappy
-  examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
-
-- intent: bot_challenge
-  examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
+    - no way
+    - stop
+    - I would never do that
+    - I don't think I will
+    - forget about it
+    - nah dude
+    - stop with that
+    - I refuse
+    - how about no
+    - forget about it

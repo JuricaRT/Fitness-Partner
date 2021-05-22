@@ -3,4 +3,5 @@ __pycache__
 .*.swo
 results/*
 models/
+database/
 credentials.yml

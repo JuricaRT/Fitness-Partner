@@ -23,6 +23,9 @@ slots:
   name:
     type: text
     influence_conversation: false
+  user_exists:
+    type: bool
+    influence_conversation: false
 
 session_config:
   session_expiration_time: 60

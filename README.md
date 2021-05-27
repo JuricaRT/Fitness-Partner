@@ -1,5 +1,8 @@
 # Fitness-Partner
 
+* STEMI chatbot code repository
+* Live chatbot: https://chatbot.stemi.education/chat?projectId=ckomscmu32507gt1i6v1okwqr&runId=ckp6rs6w2514958u9uqr7x69u7d
+
 Rasa Commands
 -------------
 

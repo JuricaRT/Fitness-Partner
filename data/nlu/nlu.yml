@@ -50,7 +50,7 @@ nlu:
     - [mike](name)
     - [jessica](name)
     - [Catherine](name)
-
+    
 - intent: affirm
   examples: |
     - yes
@@ -73,6 +73,8 @@ nlu:
     - let's start
     - go
     - start
+    - I'm ready
+    - ready
 
 - intent: deny
   examples: |

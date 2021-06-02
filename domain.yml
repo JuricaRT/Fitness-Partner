@@ -3,21 +3,39 @@ version: "2.0"
 actions:
   - action_greet_user
   - action_hello
+  - action_give_advice
 
 intents:
   - greet
   - get_name
   - affirm
   - deny
+  - want_to_know_more_about_workouts
+  - need_some_advice
+  - get_advice_subject
 
 responses:
   utter_user_not_ready:
   - text: "Alright, let me know when you're ready."
-  utter_starting_explanation:
-  - text: "**STARTING EXPLANATION STORY**" # temp
+  utter_start_explanation:
+  - text: |
+          I can do multiple things, which one would you like to know more about,
+          or do you know this already?
+          
+          I can help you create workouts. You can view, update or delete them.
+  utter_just_ask:
+  - text: "Great, if you need more info you can just ask!"
+  utter_explain_workouts_function:
+  - text: "I can help you create and view workouts depending on what your goal is.
+          Your goal can be gaining muscle mass or gaining strength for example.
+          If you're unsure about what exercises to do, feel free to ask!"
+  utter_ask_for_advice_details:
+  - text: "Are you trying to gain strength, endurance or mass?"
 
 entities:
   - name
+  - workouts_function
+  - advice_subject
 
 slots:
   name:

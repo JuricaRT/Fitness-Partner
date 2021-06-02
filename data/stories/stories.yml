@@ -10,10 +10,25 @@ stories:
       entities:
       - name
     - action: action_hello
+    - action: utter_start_explanation
     - intent: affirm
-    - action: utter_starting_explanation
+    - action: utter_just_ask
 
 - story: not ready
   steps:
     - intent: deny
     - action: utter_user_not_ready
+
+- story: explanation_workouts
+  steps:
+    - intent: want_to_know_more_about_workouts
+    - action: utter_explain_workouts_function
+
+- story: give_some_advice
+  steps:
+    - intent: need_some_advice
+    - action: utter_ask_for_advice_details
+    - intent: get_advice_subject
+      entities:
+      - advice_subject
+    - action: action_give_advice

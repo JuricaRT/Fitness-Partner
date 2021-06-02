@@ -50,6 +50,28 @@ nlu:
     - [mike](name)
     - [jessica](name)
     - [Catherine](name)
+
+- intent: get_advice_subject
+  examples: |
+    - I'm trying to gain [strength](advice_subject)
+    - i'm trying to gain [endurance](advice_subject)
+    - i need an advice about [mass](advice_subject)
+    - can you give me advice about [gaining strength](advice_subject)
+    - I would like an advice about [endurance](advice_subject)
+    - i'm trying to gain [mass](advice_subject)
+    - i really need help with [gaining endurance](advice_subject)
+    - i would like to gain [muscle mass](advice_subject)
+    - advice about [explosive strength](advice_subject) would be great
+    - can you give me advice about [increasing endurance](advice_subject)
+    - I want to gain [strength](advice_subject)
+    - i want to gain [mass](advice_subject)
+    - I want to gain [endurance](advice_subject)
+
+- lookup: advice_subject
+  examples: |
+    - strength
+    - muscle mass
+    - endurance
     
 - intent: affirm
   examples: |
@@ -69,12 +91,14 @@ nlu:
     - yeah
     - correct
     - let's go
-    - what are we waiting for?
     - let's start
     - go
     - start
     - I'm ready
     - ready
+    - good
+    - great
+    - understood
 
 - intent: deny
   examples: |
@@ -99,3 +123,31 @@ nlu:
     - I refuse
     - how about no
     - forget about it
+
+- intent: need_some_advice
+  examples: |
+    - i need some advice
+    - I need some advice
+    - can you give me advice?
+    - give me advice
+    - i need your help
+    - can you give me advice about something
+    - do you have advice for something
+    - are you giving advice for fitness?
+    - I would find some advice very helpful
+    - advice
+    - Advice
+    - just give me advice
+
+- intent: want_to_know_more_about_workouts
+  examples: |
+    - sure, I want to know more about [create workouts](workouts_function)
+    - tell me more about [creating workouts](workouts_function)
+    - explain [how to create workouts](workouts_function)
+    - please tell me [How to create workouts and update them](workouts_function)
+    - I want to know more about [updating workouts](workouts_function)
+    - how to [edit workouts](workouts_function)
+    - I would like to know more about[creating workouts](workouts_function)
+    - how to [create my workouts](workouts_function)
+    - I want to know [how can I create my own workout]
+    - explain [how creating workouts works] please

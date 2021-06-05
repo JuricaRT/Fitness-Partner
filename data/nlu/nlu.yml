@@ -23,6 +23,9 @@ nlu:
     - heyya
     - you there?
     - greetings
+    - salutations
+    - waddup
+    - morning
     
 - intent: get_name
   examples: |
@@ -151,3 +154,30 @@ nlu:
     - how to [create my workouts](workouts_function)
     - I want to know [how can I create my own workout]
     - explain [how creating workouts works] please
+
+- intent: where_are_gyms
+  examples: |
+    - I want to know where can I find gyms near me
+    - What gyms are close to me?
+    - Where can I find gym near me?
+    - Tell me more about gyms near me
+    - Where can I find fitness center?
+    - I want to know where can I find a gym near me
+    - where is the closest gym?
+    - Are there any gyms near me?
+    - can you find me a gym or fitness center?
+    - i would like to know are there any gyms nearby
+    - i am looking for place to workout
+    - I am looking for a gym
+    - I can't find any gym near me
+    - can you help me find fitness center
+    - find me a gym
+    - find me a fitness center
+
+- intent: get_user_location
+  examples: |
+    - i live in [Zagreb](user_location)
+    - I am located at [Samobor](user_location)
+    - My location is [New York](user_location)
+    - the name of my city is [Paris](user_location)
+    - I live in [London](user_location)

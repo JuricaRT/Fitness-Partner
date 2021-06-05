@@ -32,3 +32,12 @@ stories:
       entities:
       - advice_subject
     - action: action_give_advice
+
+- story: find_gyms_near_me
+  steps:
+    - intent: where_are_gyms
+    - action: utter_ask_for_location
+    - intent: get_user_location
+      entities:
+      - user_location
+    - action: action_get_gyms

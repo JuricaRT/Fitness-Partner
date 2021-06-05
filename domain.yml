@@ -4,6 +4,7 @@ actions:
   - action_greet_user
   - action_hello
   - action_give_advice
+  - action_get_gyms
 
 intents:
   - greet
@@ -13,6 +14,8 @@ intents:
   - want_to_know_more_about_workouts
   - need_some_advice
   - get_advice_subject
+  - where_are_gyms
+  - get_user_location
 
 responses:
   utter_user_not_ready:
@@ -23,6 +26,8 @@ responses:
           or do you know this already?
           
           I can help you create workouts. You can view, update or delete them.
+
+          I can help you find gyms and fitness centers near you.
   utter_just_ask:
   - text: "Great, if you need more info you can just ask!"
   utter_explain_workouts_function:
@@ -31,11 +36,14 @@ responses:
           If you're unsure about what exercises to do, feel free to ask!"
   utter_ask_for_advice_details:
   - text: "Are you trying to gain strength, endurance or mass?"
+  utter_ask_for_location:
+  - text: "Where are you currently located (your city name)?"
 
 entities:
   - name
   - workouts_function
   - advice_subject
+  - user_location
 
 slots:
   name:
@@ -43,6 +51,12 @@ slots:
     influence_conversation: false
   user_exists:
     type: bool
+    influence_conversation: false
+  advice_subject:
+    type: text
+    influence_conversation: false
+  user_location:
+    type: text
     influence_conversation: false
 
 session_config:
